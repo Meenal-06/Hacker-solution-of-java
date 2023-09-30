@@ -1,0 +1,23 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        try{
+            int a=sc.nextInt();
+            int b=sc.nextInt();
+            System.out.println(a/b);
+        }
+        catch(java.util.InputMismatchException ie){
+            System.out.println("java.util.InputMismatchException");
+        }
+        catch(java.lang.ArithmeticException ae){
+            System.out.println("java.lang.ArithmeticException: / by zero");
+        }
+    }
+}
